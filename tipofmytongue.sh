@@ -3,11 +3,11 @@
 #Tip Of My Tongue (to be used with 'newgame.sh' storage format)
 #Navigates to D&D Game Notes, prompts user for game to search, prompts user for any number of words to search for within campaign notes stored in chosen directory.
 
-#*Note on portability - update variable $mygames with directory path for your environment)
+#*Note on portability - update variable $storage with directory path for your environment)
 #Author: jort
 
 #-----VARIABLES UP HERE------
-declare mygames="/home/bilbo/Documents/DnDServer/Active_Game_Notes/"
+declare $storage="/home/bilbo/Documents/DnDServer/Active_Game_Notes/"
 declare searchpool
 declare -l searchterms
 declare searchprompt
@@ -17,7 +17,7 @@ declare searchprompt
 #Select the proper campaign notes
 function choose_adventure {
 	clear
-	cd $mygames
+	cd $storage
 	clear
 	echo " "
 	echo "Hail and well met!"
@@ -136,7 +136,7 @@ function goodbye {
 
 #-----MENU TIME!-------
 
-cd $mygames
+cd $storage
 clear
 choose_adventure
 
