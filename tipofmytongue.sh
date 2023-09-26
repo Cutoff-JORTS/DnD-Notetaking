@@ -152,7 +152,7 @@ echo "confirming name of your selected campaign is $searchpool."
 echo "---------------------------------------------------------"
 echo " "
 echo "Please choose from the following:"
-echo "1 - search notes for single word"
+echo "1 - search notes for key information"
 echo "2 - change campaign to search"
 echo "3 - send me off and end searching"
 read -sn1

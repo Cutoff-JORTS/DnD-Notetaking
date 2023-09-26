@@ -9,6 +9,7 @@
 #variables
 declare mygames="/home/bilbo/Documents/DnDServer/Active_Game_Notes/"
 declare searchpool
+declare date=date
 
 #Navigate to D&D Notes Directory
 cd $mygames
@@ -60,10 +61,13 @@ clear
 sleep 2
 	echo "Searching your well-written and detailed notes, Master Scribe, thank thee for thine patience."
 sleep 3
-	echo " "
-	echo " " 
+echo "========================================" > rest_log.txt
+echo "This service was last provided on: $date" >> rest_log.txt
+echo "========================================" >> rest_log.txt
+echot " "
 	grep -irwn 'rest' $searchpool/Text_Notes/ > $searchpool/.restlog.tmp
- sed -e 's/Monday/-/; s/Tuesday/-/; s/Wednesday/-/;  s/Thursday/-/; s/Friday/-/; s/Saturday/-/; s/Sunday/-/;  s/Text_Notes/-/' $searchpool/.restlog.tmp > $searchpool/rest_log.txt
+ sed -e 's/Monday/-/; s/Tuesday/-/; s/Wednesday/-/;  s/Thursday/-/; s/Friday/-/; s/Saturday/-/; s/Sunday/-/;  s/Text_Notes/-/' $searchpool/.restlog.tmp >> $searchpool/rest_log.txt
+
 clear
 less $searchpool/rest_log.txt
 
