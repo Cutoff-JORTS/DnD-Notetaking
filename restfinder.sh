@@ -7,7 +7,7 @@
 #Author: jort
 
 #variables
-declare mygames="/home/bilbo/Documents/DnDServer/Active_Game_Notes/"
+declare mygames="/jortpool/LabStorage/Dungeons_and_Dragons/Active_Game_Notes"
 declare searchpool
 declare date=date
 

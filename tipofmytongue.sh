@@ -7,7 +7,7 @@
 #Author: jort
 
 #-----VARIABLES UP HERE------
-declare $storage="/home/bilbo/Documents/DnDServer/Active_Game_Notes/"
+declare $storage="/jortpool/LabStorage/Dungeons_and_Dragons/Active_Game_Notes"
 declare searchpool
 declare -l searchterms
 declare searchprompt
